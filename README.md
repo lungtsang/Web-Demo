@@ -1,7 +1,7 @@
 # Web-Demo
 
 1.ToolTips
-通过font Awesome字体库完成图标的定制，使用CSS3新增的transtion、transform属性实现动画效果。
+通过font Awesome字体库完成图标的定制，使用CSS3新增的transtion、transform属性实现鼠标悬停冒泡的效果。
 
 2.DynamicTips
-使用HTML5新标签figure以及figcaption,并配合transform和transition属性制作出绚丽的动画效果，同时使用CSS3媒体查询实现了简单的响应式页面。
+使用HTML5新标签figure以及figcaption,并配合transform和transition属性制作出绚丽的CSS3图片动态提示效果，同时使用CSS3媒体查询实现了简单的响应式页面。
