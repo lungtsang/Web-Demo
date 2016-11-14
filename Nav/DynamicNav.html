@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画菜单</title>
+    <style type="text/css">
+        .top-nav {
+            font-size: 14px;
+            font-weight: bold;
+            list-style: none;
+        }
+
+        .top-nav li {
+            float: left;
+            margin-right: 1px;
+        }
+
+        .top-nav li a {
+            line-height: 34px;
+            text-decoration: none;
+            background: #0d6f7c;
+            color: #fff;
+            display: block;
+            width: 80px;
+            text-align: center;
+        }
+
+        .top-nav ul {
+            list-style: none;
+            display: none;
+            padding: 0;
+            position: absolute;
+        }
+
+        .top-nav li ul li {
+            clear: both;
+            margin-top: 1px;
+        }
+
+        .top-nav li a:hover {
+            background: #737373;
+        }
+
+        .note {
+            color: #fff;
+            display: block;
+            background: #737373;
+        }
+
+        .corner {
+            display: block;
+            width: 0px;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 20px solid #2ecc71;
+            margin-left: 35px;
+        }
+    </style>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".top-nav li").mousemove(function () {
+                $(this).find("ul").slideDown("1000");
+            })
+            $(".top-nav li").mouseleave(function () {
+                $(this).find("ul").slideUp("slow");
+            })
+        })
+    </script>
+
+    <script></script>
+</head>
+<body>
+    <ul class="top-nav">
+        <li><a href="#"><span class="note">首页</span></a></li>
+        <li><a href="#">课程</a></li>
+        <li><a href="#">学习</a>
+            <ul id="menuUL">
+                <span class="corner"></span>
+                <li><a href="#">前端</a></li>
+                <li><a href="#">app</a></li>
+                <li><a href="#">后台</a>
+            </ul>
+        </li>
+        <li><a href="#">关于</a>
+    </ul>
+</body>
+</html>
